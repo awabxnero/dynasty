@@ -1,0 +1,60 @@
+<div class="top-buttons-container">
+  <a routerLink="/">
+    <img
+      src="../../../assets/images/back-button.svg"
+      class="back-button"
+      alt=""
+    />
+  </a>
+</div>
+<div class="centered-container">
+  <form
+    class="vertical-form"
+    [formGroup]="employeeForm"
+    (ngSubmit)="updateEmployee()"
+  >
+    <label for="name">Name</label>
+    <input id="name" type="text" placeholder="Name" formControlName="name" />
+    <label for="dob">Date of birth</label>
+    <input type="date" formControlName="dob" id="dob" />
+    <label for="designation">Designation</label>
+    <input
+      id="designation"
+      type="text"
+      placeholder="Designation"
+      formControlName="designation"
+    />
+    <label for="salary">Salary</label>
+    <input
+      withoutDecimal
+      type="number"
+      id="salary"
+      placeholder="Salary"
+      formControlName="salary"
+    />
+    <label for="bio">About</label>
+    <textarea
+      id="bio"
+      placeholder="Bio"
+      formControlName="bio"
+      class="input"
+      cols="30"
+      rows="5"
+    ></textarea>
+    <div class="action-buttons">
+      <button class="button remove-button" (click)="removeEmployee()">
+        Remove Employee
+        <img
+          src="../../../assets/images/remove-button.svg"
+          class="remove-button-icon"
+          alt=""
+        />
+      </button>
+      <input
+        class="button update-button"
+        type="submit"
+        value="Update Employee"
+      />
+    </div>
+  </form>
+</div>

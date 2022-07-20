@@ -1,0 +1,49 @@
+
+.emplyee {
+  border: 1px solid #C58FFF;
+  padding: 20px;
+  margin-top:50px;
+  width: 80vw;
+  border-radius: 5px;
+
+}
+.emplyee-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #00fa00;
+}
+.emplyee-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.designation{
+  margin-left: 10px;
+}
+.edit-button{
+  width: 10px;
+  margin-left: 5px;
+}
+.emploee-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.button-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+  margin: 50px 100px 0px 0px;
+
+}
+.illustration{
+  width: 450px;
+  float: right;
+  justify-self: flex-end;
+  align-self: flex-end;
+  place-self:flex-end
+}

@@ -1,0 +1,21 @@
+.action-buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+}
+.remove-button{
+    border-color: #FF3131;
+    color: #FF3131;
+    width: 100%;
+    margin-right: 20px;
+}
+.update-button{
+  
+    width: 100%;
+}
+.remove-button-icon{
+    width: 15px;
+    margin-left: 5px;
+}

@@ -1,0 +1,35 @@
+<div class="container">
+  <div>
+    <div class="button-container">
+      <a routerLink="/add-employee" class="button">Add Employee +</a>
+    </div>
+    <div class="emploee-list" *ngFor="let employee of employees">
+      <div class="emplyee">
+        <div class="emplyee-header">
+          <div class="emplyee-title">
+            <h3>{{ employee.name }}</h3>
+            <p class="designation">- {{ employee.designation }}</p>
+          </div>
+          <a [routerLink]="['/edit-employee', employee.id]">
+            <button class="button">
+              Edit
+              <img
+                src="../../../assets/images/edit-button.svg"
+                class="edit-button"
+                alt=""
+              />
+            </button>
+          </a>
+        </div>
+        <p>Salary: {{ employee.salary | currency: "MYR":"symbol":"1.0-0" }}</p>
+        <p>Date of birth: {{ employee.dob }}</p>
+        <p>About: {{ employee.bio | truncation: 25 }}</p>
+      </div>
+    </div>
+  </div>
+  <img
+    src="../../../assets/images/illustration.svg"
+    class="illustration"
+    alt=""
+  />
+</div>
